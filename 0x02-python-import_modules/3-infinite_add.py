@@ -2,6 +2,6 @@
 
 from sys import argv
 add = 0
-for s in argv[1:]:
-    add += int(s)
+for x in argv[1:]:
+    add += int(x)
 print("{:d}".format(add))
