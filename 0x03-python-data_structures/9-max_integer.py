@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-
-def print_last_digit(number):
-    '''prints the last digit of a number'''
-    last_digit = abs(number) % 10
-    print(f"{last_digit}", end='')
-    return last_digit
+def max_integer(my_list=[]):
+    if len(my_list) == 0:
+        return "None"
+    else:
+        max = my_list[0]
+        for i in range(len(my_list)):
+            if my_list[i] > max:
+                max = my_list[i]
+        return max
